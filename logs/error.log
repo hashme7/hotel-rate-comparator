@@ -1,0 +1,72 @@
+2025-07-17T14:09:17.908Z [[31merror[39m]: Failed to initialize Temporal client
+Error: Failed to connect before the deadline
+    at checkState (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/client.js:78:26)
+    at Timeout._onTimeout (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/internal-channel.js:570:17)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+2025-07-17T14:13:25.737Z [[31merror[39m]: Failed to initialize Temporal client
+Error: Failed to connect before the deadline
+    at checkState (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/client.js:78:26)
+    at Timeout._onTimeout (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/internal-channel.js:570:17)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+2025-07-17T14:52:31.622Z [[31merror[39m]: Failed to initialize Temporal client
+Error: Failed to connect before the deadline
+    at checkState (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/client.js:78:26)
+    at Timeout._onTimeout (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/internal-channel.js:570:17)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+2025-07-17T14:53:10.352Z [[31merror[39m]: Failed to create worker
+TransportError: tonic::transport::Error(Transport, ConnectError(ConnectError("tcp connect error", Os { code: 111, kind: ConnectionRefused, message: "Connection refused" })))
+    at NativeConnection.connect (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@temporalio/worker/lib/connection.js:158:23)
+2025-07-17T14:57:58.024Z [[31merror[39m]: Failed to create worker
+TransportError: tonic::transport::Error(Transport, ConnectError(ConnectError("tcp connect error", Os { code: 111, kind: ConnectionRefused, message: "Connection refused" })))
+    at NativeConnection.connect (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@temporalio/worker/lib/connection.js:158:23)
+2025-07-17T15:17:28.752Z [[31merror[39m]: Failed to create worker
+TransportError: tonic::transport::Error(Transport, ConnectError(ConnectError("tcp connect error", Os { code: 111, kind: ConnectionRefused, message: "Connection refused" })))
+    at NativeConnection.connect (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@temporalio/worker/lib/connection.js:158:23)
+2025-07-17T15:18:07.144Z [[31merror[39m]: Failed to create worker
+TransportError: tonic::transport::Error(Transport, ConnectError(ConnectError("tcp connect error", Os { code: 111, kind: ConnectionRefused, message: "Connection refused" })))
+    at NativeConnection.connect (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@temporalio/worker/lib/connection.js:158:23)
+2025-07-17T15:19:05.238Z [[31merror[39m]: Failed to initialize Temporal client
+Error: Failed to connect before the deadline
+    at checkState (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/client.js:78:26)
+    at Timeout._onTimeout (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/internal-channel.js:570:17)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+2025-07-17T15:20:58.791Z [[31merror[39m]: Failed to initialize Temporal client
+Error: Failed to connect before the deadline
+    at checkState (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/client.js:78:26)
+    at Timeout._onTimeout (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/internal-channel.js:570:17)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+2025-07-17T15:21:45.758Z [[31merror[39m]: Failed to initialize Temporal client
+Error: Failed to connect before the deadline
+    at checkState (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/client.js:78:26)
+    at Timeout._onTimeout (/home/Hashim/Documents/Backup/hotel-rate-comparator/node_modules/@grpc/grpc-js/build/src/internal-channel.js:570:17)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+2025-07-17T15:26:05.551Z [[31merror[39m]: Error occurred: Cannot read properties of undefined (reading 'length')
+TypeError: Cannot read properties of undefined (reading 'length')
+    at HotelRateComparatorServer.<anonymous> (/home/Hashim/Documents/Backup/hotel-rate-comparator/dist/server.js:178:51)
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/Hashim/Documents/Backup/hotel-rate-comparator/dist/server.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-17T15:38:39.921Z [[31merror[39m]: Error occurred: Cannot read properties of undefined (reading 'length')
+TypeError: Cannot read properties of undefined (reading 'length')
+    at HotelRateComparatorServer.<anonymous> (/home/Hashim/Documents/Backup/hotel-rate-comparator/dist/server.js:178:51)
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/Hashim/Documents/Backup/hotel-rate-comparator/dist/server.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-17T16:06:46.563Z [[31merror[39m]: Error occurred: Cannot read properties of undefined (reading 'length')
+TypeError: Cannot read properties of undefined (reading 'length')
+    at HotelRateComparatorServer.<anonymous> (/home/Hashim/Documents/Backup/hotel-rate-comparator/dist/server.js:179:51)
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/Hashim/Documents/Backup/hotel-rate-comparator/dist/server.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-17T16:10:51.379Z [[31merror[39m]: Error occurred: Cannot read properties of undefined (reading 'length')
+TypeError: Cannot read properties of undefined (reading 'length')
+    at HotelRateComparatorServer.<anonymous> (/home/Hashim/Documents/Backup/hotel-rate-comparator/dist/server.js:179:51)
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/Hashim/Documents/Backup/hotel-rate-comparator/dist/server.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

@@ -1,0 +1,70 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: temporal-postgres
+    environment:
+      POSTGRES_USER: temporal
+      POSTGRES_PASSWORD: temporal
+      POSTGRES_DB: temporal
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - hotel-network
+
+  temporal:
+    image: temporalio/auto-setup:1.22.4
+    container_name: temporal-server
+    depends_on:
+      - postgres
+    ports:
+      - "7233:7233"
+    environment:
+      - DB=postgresql
+      - DB_PORT=5432
+      - POSTGRES_USER=temporal
+      - POSTGRES_PWD=temporal
+      - POSTGRES_SEEDS=postgres
+    networks:
+      - hotel-network
+    healthcheck:
+      test: ["CMD", "temporal", "operator", "cluster", "health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  hotel-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hotel-rate-comparator
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - TEMPORAL_ADDRESS=temporal:7233
+      - LOG_LEVEL=info
+    depends_on:
+      temporal:
+        condition: service_healthy
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - hotel-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+volumes:
+  pgdata:
+
+networks:
+  hotel-network:
+    driver: bridge
