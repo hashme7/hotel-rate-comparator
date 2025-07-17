@@ -1,0 +1,93 @@
+{
+  "info": {
+    "_postman_id": "6d15f4f1-4567-48b7-a5cc-df1234567890",
+    "name": "Hotel Rate Comparator (Live API)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1️⃣ Compare Hotels",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://hotel-api.hashim-dev007.online/api/hotels?city=delhi",
+          "protocol": "http",
+          "host": ["hotel-api", "hashim-dev007", "online"],
+          "path": ["api", "hotels"],
+          "query": [
+            {
+              "key": "city",
+              "value": "delhi"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "2️⃣ Supplier A - Hotels",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://hotel-api.hashim-dev007.online/supplierA/hotels",
+          "protocol": "http",
+          "host": ["hotel-api", "hashim-dev007", "online"],
+          "path": ["supplierA", "hotels"]
+        }
+      }
+    },
+    {
+      "name": "3️⃣ Supplier B - Hotels",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://hotel-api.hashim-dev007.online/supplierB/hotels",
+          "protocol": "http",
+          "host": ["hotel-api", "hashim-dev007", "online"],
+          "path": ["supplierB", "hotels"]
+        }
+      }
+    },
+    {
+      "name": "4️⃣ Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://hotel-api.hashim-dev007.online/health",
+          "protocol": "http",
+          "host": ["hotel-api", "hashim-dev007", "online"],
+          "path": ["health"]
+        }
+      }
+    },
+    {
+      "name": "5️⃣ Ready Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://hotel-api.hashim-dev007.online/ready",
+          "protocol": "http",
+          "host": ["hotel-api", "hashim-dev007", "online"],
+          "path": ["ready"]
+        }
+      }
+    },
+    {
+      "name": "6️⃣ API Info",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://hotel-api.hashim-dev007.online/api/info",
+          "protocol": "http",
+          "host": ["hotel-api", "hashim-dev007", "online"],
+          "path": ["api", "info"]
+        }
+      }
+    }
+  ]
+}
